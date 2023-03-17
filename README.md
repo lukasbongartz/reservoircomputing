@@ -65,10 +65,9 @@ If no, the script will be aborted.
 The same as Input_Boards_0.py, but for using the input channels of a second board.
 
 
-**Get started**
+**How to get started**
 
-First, you need to download the Instacal-software from https://www.mccdaq.com/daq-software/instacal.aspx
-In this software, you can set and test basic functions of the boards. Here is also where, if you use two boards, the indices
+First, you need to download the Instacal-software from https://www.mccdaq.com/daq-software/instacal.aspx In this software, you can set and test basic functions of the boards. Here is also where, if you use two boards, the indices
 of board 0 and board 1 are assigned.
 
 Then, go to your favorite python environment (I recommend VS Code) and open the Python Folder. I also recommend working
