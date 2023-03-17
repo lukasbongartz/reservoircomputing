@@ -20,49 +20,49 @@ When talking about the setup, always keep in mind what input and output refer to
 
 There are 5 files in the Python folder that are of interest to you. Do not change the rest.
 
-	- Functions_Output.py
+	Functions_Output.py
 		
-		Let's you use mathematical functions (sin, square) as the output of the card. You need to set the time,
-		for how long the signal should be applied, the rate, and the individual parameters for the 4 channels. 
-		The latter happens within the function add_example_data(), where you have to set frequency, amplitude, and y_offset
-		for each of the 4 channels. In case you use a square wave, you can also set the duty cycle here.
+Let's you use mathematical functions (sin, square) as the output of the card. You need to set the time,
+for how long the signal should be applied, the rate, and the individual parameters for the 4 channels. 
+The latter happens within the function add_example_data(), where you have to set frequency, amplitude, and y_offset
+for each of the 4 channels. In case you use a square wave, you can also set the duty cycle here.
 		
-		For selecting which function (sin, square or 0V) you want to use as the output, scroll further down
-		and search for the comment "# Function selection". There, you choose the individual functions by
-		commenting out (inserting "#") the ones that you DON'T want to use. Don't be surprised that the
-		script is slower, when you use a square wave.
+For selecting which function (sin, square or 0V) you want to use as the output, scroll further down
+and search for the comment "# Function selection". There, you choose the individual functions by
+commenting out (inserting "#") the ones that you DON'T want to use. Don't be surprised that the
+script is slower, when you use a square wave.
 
-		When you run the script, a window will pop up, displaying a 2s-snippet of your output functions. The signal
-		will be applied, once you close this window.
+When you run the script, a window will pop up, displaying a 2s-snippet of your output functions. The signal
+will be applied, once you close this window.
 
-	- Data_preparation.py
+	Data_preparation.py
 		
-		Only relevant, if you use a data set as the input. This file transforms the single input files
-		(spoken words, heartbeats...) into one single file, where you need to specify the rate, 
-		the time for how long 0V is applied inbetween (important when using the hysteresis) and
-		the y_offset (important when making the fibers more sensitive).
+Only relevant, if you use a data set as the input. This file transforms the single input files
+(spoken words, heartbeats...) into one single file, where you need to specify the rate, 
+the time for how long 0V is applied inbetween (important when using the hysteresis) and
+the y_offset (important when making the fibers more sensitive).
 
-	- Data_Output.py
+	Data_Output.py
 		
-		Let's you use a dataset as the output of the card. You need to prepare this dataset beforehand with
-		the file Data_preparation.py. You need to set the rate, the folder, in which the (prepared) input file
-		is located, as well as the file name. 		
+Let's you use a dataset as the output of the card. You need to prepare this dataset beforehand with
+the file Data_preparation.py. You need to set the rate, the folder, in which the (prepared) input file
+is located, as well as the file name. 		
 
-		When you run the script, a window will pop up, displaying your output. The signal will be applied, 
-		once you close this window.
+When you run the script, a window will pop up, displaying your output. The signal will be applied, 
+once you close this window.
 
-	- Input_Boards_0.py
+	Input_Boards_0.py
 	
-		Let's you record the input with board 0 (0 as defined in the Instacal software, see below).
-		You need to set the recording rate (I recommend using the same rate as in your x_Output.py file), the
-		name of the output file and the folder's path, where the data should be stored. In case the script recognizes
-		a file of same name (for example because you forgot to change the name between your experiments), 
-		it will pause and ask, whether you want to continue. If you say yes, the particular file will be overwritten. 
-		If no, the script will be aborted.
+Let's you record the input with board 0 (0 as defined in the Instacal software, see below).
+You need to set the recording rate (I recommend using the same rate as in your x_Output.py file), the
+name of the output file and the folder's path, where the data should be stored. In case the script recognizes
+a file of same name (for example because you forgot to change the name between your experiments), 
+it will pause and ask, whether you want to continue. If you say yes, the particular file will be overwritten. 
+If no, the script will be aborted.
 
-	- Input_Boards_1.py
+	Input_Boards_1.py
 	
-		The same as Input_Boards_0.py, but for using the input channels of a second board.
+The same as Input_Boards_0.py, but for using the input channels of a second board.
 
 
 --- Get started ---
