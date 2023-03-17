@@ -114,9 +114,14 @@ Connect all the hardware.
 - Using more than 8 card inputs
 
 	For using more than 8 card input channels, you need to connect two cards and check in Instacal that the indices 0 and 1 are
-	assigned. Also, check that both cards are set to single-ended mode. You will then not only open two terminals, but three. In Terminal 1 you run your x_output.py file. In Terminal 2 & 3 you rund
+	assigned. Also, check that both cards are set to single-ended mode. You will then not only open two terminals, but three. In Terminal 1 you run your 		x_output.py file. In Terminal 2 & 3 you rund
 	Input_Board_0.py and Input_Board_1.py. 
  
+ 
+- More help:
+
+	This will not be relevant to, as long as everything works fine. Otherwise, you might want to have a look at
+	https://www.mccdaq.com/PDFs/Manuals/Mcculw_WebHelp/ULStart.htm and to the manual.
 
 	
 
