@@ -2,7 +2,7 @@
 
 L.Bongartz 16.03.2023
 
---- Intro to using the MCC Daq Cards for reservoir computing ---
+**Intro to using the MCC Daq Cards for reservoir computing**
 
 In this folder, you find two subfolders, Python & Data. Python contains the code files to run the MCC
 cards. Data contains the input (if used) and output data. Independent of whether you use functions
@@ -16,7 +16,7 @@ When talking about the setup, always keep in mind what input and output refer to
 	- Output of card = Input of reservoir
 	- Input of card = Output of reservoir
 
---- Python Folder ---
+**Python Folder**
 
 There are 5 files in the Python folder that are of interest to you. Do not change the rest.
 
@@ -65,7 +65,7 @@ If no, the script will be aborted.
 The same as Input_Boards_0.py, but for using the input channels of a second board.
 
 
---- Get started ---
+**Get started**
 
 First, you need to download the Instacal-software from https://www.mccdaq.com/daq-software/instacal.aspx
 In this software, you can set and test basic functions of the boards. Here is also where, if you use two boards, the indices
@@ -78,7 +78,7 @@ whatever reason, you need to import all the libraries and packages to your pytho
 pathlib, mcculw etc.). Once this is set up, you should be ready to go.
 
 
---- How to start an experiment ---
+**How to start an experiment**
 
 Connect all the hardware.
 
