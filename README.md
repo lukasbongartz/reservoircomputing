@@ -1,1 +1,1 @@
-# congenial-spoon
+# Reservoir Computing Setup
